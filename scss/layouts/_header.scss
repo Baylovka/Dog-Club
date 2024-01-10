@@ -1,0 +1,56 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        padding: 42px 8px 0;
+
+        @media screen and (max-width: $bp-mobile) {
+            padding: 18px 0 0 0;
+        }
+    }
+
+    &__logo img {
+        @media screen and (max-width: $bp-mobile) {
+            width: 92px;
+        }
+    }
+
+    &__nav {
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 48px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @media screen and (max-width: $bp-mobile) {
+            gap: 16px;
+        }
+    }
+
+    &__btn-contact {
+        @media screen and (max-width: $bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__btn-burger {
+        display: none;
+
+        @media screen and (max-width: $bp-desktop) {
+            display: block;
+        }
+    }
+}

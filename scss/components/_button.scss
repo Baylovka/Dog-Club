@@ -1,0 +1,15 @@
+.button {
+    color: $color-primary-white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px 32px;
+    background-color: $color-primary-orange;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: $color-secondary-FCB62A;
+    }
+}

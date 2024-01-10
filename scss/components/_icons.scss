@@ -1,0 +1,22 @@
+.icon {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    fill: $color-primary-orange;
+    cursor: pointer;
+    transition: fill .2s;
+
+    &:hover {
+        fill: $color-secondary-FCB62A;
+    }
+
+    &__size {
+        width: 40px;
+        height: 40px;
+
+        @media screen and (max-width: $bp-mobile) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
