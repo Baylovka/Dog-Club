@@ -1,13 +1,19 @@
 .button {
     color: $color-primary-white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 16px 32px;
+    padding: 8px 24px;
     background-color: $color-primary-orange;
-    border-radius: 8px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
     transition: background-color .2s;
+
+    @media screen and (min-width: $bp-mobile) {
+        font-size: 18px;
+        padding: 16px 32px;
+        border-radius: 8px;
+    }
 
     &:hover {
         background-color: $color-secondary-FCB62A;
