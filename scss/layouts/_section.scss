@@ -3,6 +3,7 @@
     &__title {
         font-family: "Rowdies", sans-serif;
         font-size: 32px;
+        margin-bottom: 24px;
 
         @media screen and (min-width: $bp-mobile) {
             font-size: 48px;
@@ -10,6 +11,7 @@
 
         @media screen and (min-width: $bp-tablet) {
             font-size: 56px;
+            margin-bottom: 48px;
         }
 
         &--center {
