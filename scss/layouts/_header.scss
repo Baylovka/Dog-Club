@@ -18,7 +18,7 @@
     }
 
     &__nav {
-        @media screen and (max-width: $bp-desktop) {
+        @media screen and (max-width: $bp-small-desktop) {
             display: none;
         }
     }
@@ -27,7 +27,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 8px 48px;
+        gap: 8px 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 8px 48px;
+        }
     }
 
     &__buttons {
@@ -41,7 +45,7 @@
     }
 
     &__btn-contact {
-        @media screen and (max-width: $bp-desktop) {
+        @media screen and (max-width: $bp-small-desktop) {
             display: none;
         }
     }
@@ -49,7 +53,7 @@
     &__btn-burger {
         display: none;
 
-        @media screen and (max-width: $bp-desktop) {
+        @media screen and (max-width: $bp-small-desktop) {
             display: block;
         }
     }

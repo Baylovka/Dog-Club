@@ -1,0 +1,104 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: $color-primary-white;
+    transform: translateX(100%);
+    transition: transform .2s;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__container {
+        padding: 18px 20px;
+
+        @media screen and (min-width: $bp-mobile) {
+            padding: 42px 20px;
+        }
+    }
+
+    &__logo-and-button {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width: $bp-mobile) {
+            padding: 0 8px;
+        }
+    }
+
+    &__logo img {
+        @media screen and (max-width: $bp-mobile) {
+            width: 92px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        border: none;
+        fill: none;
+        background-color: transparent;
+        stroke: $color-primary-orange;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        @media screen and (min-width: $bp-mobile) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 32px 0 24px;
+        width: fit-content;
+
+        @media screen and (min-width: $bp-mobile) {
+            gap: 24px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 22px;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        gap: 8px;
+        width: fit-content;
+    }
+
+    &__icon-instagram,
+    &__icon-facebook {
+        width: 40px;
+        height: 40px;
+
+        @media screen and (max-width: $bp-mobile) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__icon-instagram {
+        stroke: $color-primary-orange;
+        fill: none;
+
+        &:hover {
+            fill: none;
+            stroke: $color-secondary-FCB62A;
+        }
+    }
+}
