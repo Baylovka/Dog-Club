@@ -1,0 +1,65 @@
+.nutrition-section {
+    padding: 72px 0 88px;
+
+    &__header {
+        display: none;
+        
+        @media screen and (min-width: $bp-small-desktop) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 72px;
+        }
+    }
+
+    &__title {
+        color: $color-primary-orange;
+        margin-bottom: unset;
+    }
+
+    &__products {
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px 28px;
+        justify-content: center;
+    }
+
+    &__item {
+        // width: 288px;
+        // flex-basis: calc((100% - 96px) / 4);
+        
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 24px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color .2s, fill .2s;
+
+        &:hover {
+            fill: $color-primary-white;
+            background-color: $color-secondary-FCB62A;
+        }
+
+        &--rotate {
+            transform: rotate(180deg);
+            
+        }
+    }
+}

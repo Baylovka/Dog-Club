@@ -1,0 +1,79 @@
+.nutrition-card {
+    // border: 1px black solid; /*remove*/
+    width: 288px; /*remove*/
+    // height: 512px; /*remove*/
+    padding: 16px 16px 24px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+        margin-bottom: 8px;
+        width: 100%; /*remove*/
+        height: 288px; /*remove*/
+        object-fit: contain;
+    }
+
+    &__code-rating-box {
+        display: flex;
+        gap: 16px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    &__code-box {
+        color: $color-secondary-839AA9;
+        margin-bottom: unset;
+    }
+
+    &__id {}
+
+    &__box-rating {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__item-rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        fill: $color-secondary-FCB62A;
+    }
+
+    &__description {
+        text-align: center;
+        margin-bottom: 24px;
+
+        // display: -webkit-box;
+        // -webkit-line-clamp: 3;
+        // -webkit-box-orient: vertical;
+        // overflow: hidden;
+    }
+
+    &__price-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+
+    &__price-with-discount {
+        font-size: 18px;
+        margin-bottom: unset;
+        font-weight: bold;
+    }
+
+    &__price-standart {
+        font-size: 14px;
+        color: $color-secondary-839AA9;
+        margin-bottom: unset;
+        text-decoration: line-through;
+    }
+
+    &__button {}
+}

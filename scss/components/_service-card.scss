@@ -9,6 +9,10 @@
     border: 1px solid $color-secondary-F9F9FF;
     padding: 47px 62px;
 
+    &:hover {
+        background: linear-gradient(180deg, $color-secondary-FCB62A 0%, #FFFBF4 100%);
+    }
+
     &__svg {
         width: 96px;
         height: 96px;
