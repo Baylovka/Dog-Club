@@ -1,10 +1,14 @@
 .sort-block {
-    display: flex;
-    align-items: center;
-    border: none;
-    margin: 0;
-    padding: 0;
-    user-select: none;
+    display: none;
+    
+    @media screen and (min-width: $bp-small-desktop) {
+        display: flex;
+        align-items: center;
+        border: none;
+        margin: 0;
+        padding: 0;
+        user-select: none;
+    }
 
     &__container-field {
         display: flex;

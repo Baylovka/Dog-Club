@@ -17,10 +17,10 @@
         </a>
         <nav class="header__nav">
           <ul class="header__menu">
-            <li><a class="link" href="../index.html#less-talk">Less talk</a></li>
-            <li><a class="link" href="../index.html#services">Services category</a></li>
-            <li><a class="link" href="../index.html#customer">Happy customer</a></li>
-            <li><a class="link" href="../index.html#contact">Contact</a></li>
+            <li><a class="link" href="./index.html#less-talk">Less talk</a></li>
+            <li><a class="link" href="./index.html#services">Services category</a></li>
+            <li><a class="link" href="./index.html#customer">Happy customer</a></li>
+            <li><a class="link" href="./index.html#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header__buttons">
@@ -44,6 +44,12 @@
       <div class="container">
         <div class="nutrition-section__header">
           <h2 class="nutrition-section__title section__title">Nutrition</h2>
+          <div class="nutrition-section__mobile-btn-sorting sort-btn-open">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-sort-arrows"></use>
+            </svg>
+            <span id="name-sort">Popularity</span>
+          </div>
           <fieldset class="sort-block">
             <legend class="sort-block__title">Sorting:</legend>
             <div class="sort-block__container-field">
@@ -105,7 +111,8 @@
                     </li>
                   </ul>
                 </div>
-                <p class="nutrition-card__description">Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)
+                <p class="nutrition-card__description">
+                  Dry food for dogs of average breeds Savory 3 kg (turkey and lamb)
                 </p>
                 <div class="nutrition-card__price-box">
                   <p class="nutrition-card__price-with-discount"><span>136.00</span>$</p>
@@ -318,10 +325,10 @@
         </div>
         <nav class="footer__nav">
           <ul class="footer__menu">
-            <li><a class="link" href="../index.html#less-talk">Less talk</a></li>
-            <li><a class="link" href="../index.html#services">Services category</a></li>
-            <li><a class="link" href="../index.html#customer">Happy customer</a></li>
-            <li><a class="link" href="../index.html#contact">Contact</a></li>
+            <li><a class="link" href="./index.html#less-talk">Less talk</a></li>
+            <li><a class="link" href="./index.html#services">Services category</a></li>
+            <li><a class="link" href="./index.html#customer">Happy customer</a></li>
+            <li><a class="link" href="./index.html#contact">Contact</a></li>
           </ul>
         </nav>
         <form class="footer__form" name="footer-form" autocomplete="off">
@@ -345,6 +352,45 @@
     </div>
   </footer>
 
+  <div class="backdrop-sorting is-hidden">
+    <div class="mobile-sorting">
+      <h3 class="mobile-sorting__title">Sorting</h3>
+      <ul class="mobile-sorting__list">
+        <li class="mobile-sorting__item">
+          <span class="mobile-sorting__name-sort">Popularity</span>
+          <svg width="14px" height="14px">
+            <use href="./images/icons.svg#icon-pagination-arrow"></use>
+          </svg>
+        </li>
+        <li class="mobile-sorting__item">
+          <span class="mobile-sorting__name-sort">Cheaper first</span>
+          <svg width="14px" height="14px">
+            <use href="./images/icons.svg#icon-pagination-arrow"></use>
+          </svg>
+        </li>
+        <li class="mobile-sorting__item">
+          <span class="mobile-sorting__name-sort">More expensive first</span>
+          <svg width="14px" height="14px">
+            <use href="./images/icons.svg#icon-pagination-arrow"></use>
+          </svg>
+        </li>
+        <li class="mobile-sorting__item">
+          <span class="mobile-sorting__name-sort">By name</span>
+          <svg width="14px" height="14px">
+            <use href="./images/icons.svg#icon-pagination-arrow"></use>
+          </svg>
+        </li>
+        <li class="mobile-sorting__item">
+          <span class="mobile-sorting__name-sort">New ones first</span>
+          <svg width="14px" height="14px">
+            <use href="./images/icons.svg#icon-pagination-arrow"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
   <div class="mobile-menu">
     <div class="mobile-menu__container">
       <div class="mobile-menu__logo-and-button">
@@ -359,10 +405,10 @@
       </div>
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__menu">
-          <li><a class="link mobile-menu__link" href="../index.html#less-talk">Less talk</a></li>
-          <li><a class="link mobile-menu__link" href="../index.html#services">Services category</a></li>
-          <li><a class="link mobile-menu__link" href="../index.html#customer">Happy customer</a></li>
-          <li><a class="link mobile-menu__link" href="../index.html#contact">Contact</a></li>
+          <li><a class="link mobile-menu__link" href="./index.html#less-talk">Less talk</a></li>
+          <li><a class="link mobile-menu__link" href="./index.html#services">Services category</a></li>
+          <li><a class="link mobile-menu__link" href="./index.html#customer">Happy customer</a></li>
+          <li><a class="link mobile-menu__link" href="./index.html#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="mobile-menu__social-media">
@@ -431,6 +477,7 @@
 
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/mobile-sorting.js"></script>
 </body>
 
 </html>

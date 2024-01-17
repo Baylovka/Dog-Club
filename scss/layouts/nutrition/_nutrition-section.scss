@@ -2,10 +2,12 @@
     padding: 72px 0 88px;
 
     &__header {
-        display: none;
-        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+
         @media screen and (min-width: $bp-small-desktop) {
-            display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 72px;
@@ -14,23 +16,31 @@
 
     &__title {
         color: $color-primary-orange;
-        margin-bottom: unset;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-small-desktop) {
+            margin-bottom: unset;
+        }
     }
 
-    &__products {
-    }
+    &__products {}
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 64px 28px;
+        gap: 16px 8px;
         justify-content: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 64px 28px;
+        }
     }
 
     &__item {
-        // width: 288px;
-        // flex-basis: calc((100% - 96px) / 4);
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
     }
 
     &__pagination {
@@ -59,7 +69,23 @@
 
         &--rotate {
             transform: rotate(180deg);
-            
+
+        }
+    }
+
+    &__mobile-btn-sorting {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        width: fit-content;
+
+        @media screen and (min-width: $bp-small-desktop) {
+            display: none;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 16px;
         }
     }
 }
