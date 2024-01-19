@@ -1556,7 +1556,17 @@ a {
 }
 
 .nutrition-section {
-  padding: 72px 0 88px;
+  padding: 34px 0 0;
+}
+@media screen and (min-width: 460px) {
+  .nutrition-section {
+    padding: 34px 0 44px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nutrition-section {
+    padding: 72px 0 88px;
+  }
 }
 .nutrition-section__header {
   display: -webkit-box;
@@ -1782,6 +1792,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
   border: none;
