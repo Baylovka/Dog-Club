@@ -202,7 +202,6 @@ function refreshPagination(numChangePage, products, countAllPages) {
     const numChecked = document.querySelector(`.pagination-block__input[checked]`);
 
     if (numChangePage == numChecked.id) {
-        console.log("Huya")
         return;
     }
 
